@@ -1,0 +1,14 @@
+export {default as photo}  from './images/photo.jpg';
+export {default as react}  from './images/React-icon.svg.png';
+export {default as photo1}  from './images/photo1.jpg';
+export {default as html}  from './images/html.png';
+export {default as js}  from './images/js.png';
+export {default as tailwindcss}  from './images/tailwindcss.png';
+export {default as project}  from './images/project.png';
+export {default as project2}  from './images/project2.png';
+export {default as project3}  from './images/project3.png';
+export {default as project4}  from './images/project4.png';
+export {default as project5}  from './images/project5.png';
+export {default as project6}  from './images/project6.png';
+export {default as download}  from './icons/download.svg';
+export {default as mycv}  from './files/mycv.pdf';

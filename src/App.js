@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import LazyLoad from "react-lazy-load";
+import { useEffect, useState } from "react";
+import { Navbar, HeroSection, SkillsSection, ProjectsSection, ServicesSection, Loader, ContactSection, Footer } from "./components/index";
 
 function App() {
+  
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000)
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LazyLoad >
+
+        <div className=" w-full h-full">
+
+          {loading 
+          ? (
+            <Loader />
+          ) : (
+            <>
+              <Navbar />
+            
+              <div className=" w-full md:px-48 px-10 mt-5">
+                <HeroSection id="/"/>
+                <SkillsSection id="about"/>
+                <ProjectsSection id="projects"/>
+                <ServicesSection id="services"/>
+                <ContactSection id="contact"/>
+              </div>
+              
+              <Footer />
+            </>
+          )
+          }
+
+        </div>
+    </LazyLoad>
+    
   );
 }
 
