@@ -20,7 +20,7 @@ function Footer() {
                         </a>
                     </div>
                     <div className='flex justify-center items-center bg-sky-800 w-9 h-9 rounded cursor-pointer'>
-                        <a href="https://github.com/kakamyrat" target=''>
+                        <a href="https://github.com/komekovv" target=''>
                             <i className="bi bi-github text-2xl text-white"></i>
                         </a>
                     </div>
