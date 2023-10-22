@@ -1,4 +1,3 @@
-export {default as photo}  from './images/photo.jpg';
 export {default as react}  from './images/React-icon.svg.png';
 export {default as photo1}  from './images/photo1.jpg';
 export {default as html}  from './images/html.png';
