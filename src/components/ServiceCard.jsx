@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ServiceCard({service}) {
   return (
-    <div className=" flex flex-col items-center justify-evenly md:w-[350px] h-[300px] rounded-md  p-3 bg-slate-800">
+    <div className=" flex flex-col items-center justify-evenly lg:w-[350px] h-[300px] rounded-md  p-3 bg-slate-800">
         <div>
             <i className={`bi ${service.icon} text-sky-700 text-6xl`}></i>
         </div>

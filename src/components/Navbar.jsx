@@ -53,9 +53,9 @@ function Navbar() {
     
     return ( 
         <nav className=" sticky bg-dark top-0 md:px-48 px-5 w-full min-w-full flex justify-between items-center py-5 border-b border-slate-700 z-40">
-            <div className="text-white font-bold md:text-xl text-lg md:cursor-pointer select-none">KOMEKOVV</div>
+            <div className="text-white font-bold md:text-xl sm:text-lg text-sm md:cursor-pointer select-none">KOMEKOV</div>
             
-            <ul className=" md:flex hidden ">
+            <ul className=" lg:flex hidden ">
             {navbarLinks.map((link) => (
                 <li 
                   key={link.id} 
@@ -71,12 +71,12 @@ function Navbar() {
             </ul>
 
             <div className='flex items-center gap-5'>
-                <div className='flex md:flex-row flex-row-reverse items-center gap-5'>
-                    <div className=' text-white md:cursor-pointer'><i className="bi bi-globe-central-south-asia"></i></div>
-                    <div className='flex gap-2 md:cursor-pointer bg-sky-800 text-white py-2 px-3 select-none'>
-                        <a href={mycv} download={mycv} className='text-s'>Download CV</a> 
-                        <div className='relative md:cursor-pointer' > 
-                            <i className="bi bi-download" onClick={languageActiveHandler}></i>
+                <div className='flex lg:flex-row flex-row-reverse items-center gap-5'>
+                    <div className=' text-white lg:cursor-pointer'><i className="bi bi-globe-central-south-asia"></i></div>
+                    <div className='flex gap-2 items-center lg:cursor-pointer bg-sky-800 text-white py-2 px-3 select-none'>
+                        <a href={mycv} download={mycv} className=' text-xs lg:text-sm'>Download CV</a> 
+                        <div className='relative lg:cursor-pointer' > 
+                            <i className="bi bi-download text-xs sm:text-sm" onClick={languageActiveHandler}></i>
                             {
                                 languageActive && (
                                     <span className='absolute top-12 w-20 h-20 bg-black'></span>
@@ -85,7 +85,7 @@ function Navbar() {
                         </div>
                     </div>
                 </div>
-                <div className='md:hidden text-white md:cursor-pointer' onClick={menuActiveHandler}>
+                <div className='lg:hidden text-white lg:cursor-pointer' onClick={menuActiveHandler}>
                     <i className={`${ menuActive ? 'bi bi-x' : 'bi bi-list'} text-xl`}></i>
                 </div>
             </div>
@@ -94,7 +94,7 @@ function Navbar() {
             
             {
                 menuActive && (
-                    <div className='absolute top-0 right-0 w-2/4 h-screen bg-dark md:hidden transition-all'>
+                    <div className='absolute top-0 right-0 w-2/4 h-screen bg-dark lg:hidden transition-all'>
                         <div className='flex items-center gap-8 px-3 w-full h-[80.8px] text-white border-b border-slate-700'>
                             <span onClick={menuActiveHandler}>
                                 <i className=' bi bi-x text-white text-4xl'></i>

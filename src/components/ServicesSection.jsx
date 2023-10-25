@@ -4,10 +4,10 @@ import { services } from "../util/constants";
 
 function ServicesSection() {
     return (
-        <section className="md:h-screen flex flex-col items-center" id='services'>
-            <h1 className='text-white font-bold text-3xl my-14 md:text-left text-center'>Services</h1>
+        <section className="lg:h-screen flex flex-col items-center" id='services'>
+            <h1 className='text-white font-bold text-3xl my-14 lg:text-left text-center'>Services</h1>
 
-            <div className="grid md:grid-cols-3 grid-cols-1 md:p-3 gap-6 h-full md:items-center">
+            <div className="grid lg:grid-cols-3 grid-cols-1 lg:p-3 gap-6 h-full lg:items-center">
             {services.map((service) => (
                 <ServiceCard key={service.title} service={service}/>
             ))}

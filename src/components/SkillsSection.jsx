@@ -6,7 +6,7 @@ function SkillsSection() {
     return (
     <>
         <h1 className=' text-white font-bold text-3xl my-14 text-center' id='skills'>Skills</h1>
-        <section className=" md:flex block gap-5 " id="about">
+        <section className=" lg:flex block gap-5 " id="about">
             <div className="grid md:basis-2/4 md:grid-cols-2 grid-cols-1 gap-10 md:p-3 animate__animated animate__slideInLeft">
                 {skills.map((skill) => (
                     <SkillCard key={skill.title} skill={skill}/>

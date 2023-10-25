@@ -8,7 +8,7 @@ function SkillCard({skill}) {
               <img src={skill.img} alt="react" className="w-full h-full object-contain" />
             
             </div>
-          <h1 className="text-white text-2xl">{skill.title}</h1>
+          <h1 className="text-white text-2xl text-center">{skill.title}</h1>
           <p className="text-center text-slate-300">{skill.summary}</p>
         </div>
     );

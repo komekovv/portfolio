@@ -4,9 +4,9 @@ function ContactSection() {
     return (
         <>
             <h1 className='text-white font-bold text-3xl text-center my-14'>Contact me</h1>
-            <section className='flex flex-col  items-center w-full md:h-screen py-10' id='contact'>
-                <form className='flex flex-col gap-5 md:w-3/5'>
-                    <div className='grid md:grid-cols-2 gap-5'>
+            <section className='flex flex-col  items-center w-full lg:h-screen py-10' id='contact'>
+                <form className='flex flex-col gap-5 lg:w-3/5'>
+                    <div className='grid lg:grid-cols-2 gap-5'>
                         <div>
                             <input 
                                 type="text" 
@@ -31,7 +31,7 @@ function ContactSection() {
                         ></textarea>
                     </div>
                     <div className='flex justify-center w-full'>
-                        <button className='py-3 bg-sky-800 w-1/3 text-white rounded-sm'>Send Message</button>
+                        <button className='py-3 bg-sky-800 w-2/5 text-white rounded-sm'>Send Message</button>
                     </div>
                 </form>
             </section>

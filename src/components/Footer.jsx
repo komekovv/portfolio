@@ -26,7 +26,7 @@ function Footer() {
                     </div>
                 </div>
                 <div>
-                    <p className='text-slate-400'>© Copyright Kakamyrat. All rights reserved. 2023</p>
+                    <p className='text-slate-400'>Developed by Kakamyrat 2023</p>
                 </div>
         </footer>
     );

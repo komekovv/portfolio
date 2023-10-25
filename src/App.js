@@ -26,7 +26,7 @@ function App() {
             <>
               <Navbar />
             
-              <div className=" w-full md:px-48 px-10 mt-5">
+              <div className=" w-full md:px-28 lg:px-48 px-10 mt-5">
                 <HeroSection id="/"/>
                 <SkillsSection id="about"/>
                 <ProjectsSection id="projects"/>
