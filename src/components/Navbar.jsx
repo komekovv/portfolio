@@ -74,7 +74,7 @@ function Navbar() {
                 <div className='flex md:flex-row flex-row-reverse items-center gap-5'>
                     <div className=' text-white md:cursor-pointer'><i className="bi bi-globe-central-south-asia"></i></div>
                     <div className='flex gap-2 md:cursor-pointer bg-sky-800 text-white py-2 px-3 select-none'>
-                        <a href={mycv} download={mycv}>Download CV</a> 
+                        <a href={mycv} download={mycv} className='text-s'>Download CV</a> 
                         <div className='relative md:cursor-pointer' > 
                             <i className="bi bi-download" onClick={languageActiveHandler}></i>
                             {

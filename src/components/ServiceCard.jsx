@@ -6,7 +6,7 @@ export default function ServiceCard({service}) {
         <div>
             <i className={`bi ${service.icon} text-sky-700 text-6xl`}></i>
         </div>
-        <h1 className="text-white text-2xl font-medium">{service.title}</h1>
+        <h1 className="text-white text-2xl font-medium text-center">{service.title}</h1>
         <p className="text-center text-slate-400">{service.summary}</p>
     </div>
   )
